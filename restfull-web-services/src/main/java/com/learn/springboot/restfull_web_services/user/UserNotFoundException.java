@@ -1,0 +1,15 @@
+package com.learn.springboot.restfull_web_services.user;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(code= HttpStatus.CREATED)
+public class UserNotFoundException extends RuntimeException {
+
+	public UserNotFoundException(String message) {
+		super(message);
+		
+	}
+
+	
+}
